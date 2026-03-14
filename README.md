@@ -48,4 +48,4 @@ In OpenClaw, use the `occ` skill with the `:/occ` prefix:
 
 ```
 
-See [docs/](docs/) for usage in different languages.
+详细内容请参考各语言版本的文档。 for usage in different languages.

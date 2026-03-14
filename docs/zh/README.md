@@ -48,4 +48,4 @@ npx skills add gongxh13/opencode-controller
 
 ```
 
-相关文档：[docs/](docs/)
+详细内容请参考各语言版本的文档。
