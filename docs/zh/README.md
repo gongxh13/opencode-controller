@@ -46,22 +46,6 @@ npx skills add gongxh13/opencode-controller
 :/occ continue <session-id> "添加密码重置功能"
 ```
 
-### 与 ADT 集成
-
-OCC 可以与 [ADT](https://atomgit.com/leon-wang2021/agent-dev-team)（Agent Development Team）配合使用，实现自动化 Issue 处理：
-
-```bash
-# 初始化新项目
-:/occ create "/adt:init"
-
-# 创建需求/Issue
-:/occ create "/adt:feature 用户登录功能"
-
-# 开始开发
-:/occ create "/adt:start #123"
-
-# 自动化执行
-:/occ create "/adt:start-auto 测试登录功能"
 ```
 
 相关文档：[docs/](docs/)

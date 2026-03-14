@@ -46,22 +46,6 @@ In OpenClaw, use the `occ` skill with the `:/occ` prefix:
 :/occ continue <session-id> "Add password reset feature"
 ```
 
-### Integration with ADT
-
-OCC works seamlessly with [ADT](https://atomgit.com/leon-wang2021/agent-dev-team) (Agent Development Team) for automated issue handling:
-
-```bash
-# Initialize new project
-:/occ create "/adt:init"
-
-# Create a feature/issue
-:/occ create "/adt:feature 用户登录功能"
-
-# Start development
-:/occ create "/adt:start #123"
-
-# Automated execution
-:/occ create "/adt:start-auto 测试登录功能"
 ```
 
 See [docs/](docs/) for usage in different languages.
