@@ -43,14 +43,7 @@ node bin/opencode-server.js continue <session-id> "Add password reset feature"
 node bin/opencode-server.js run "Fix the login bug"
 ```
 
-## Commands
 
-| Command | Description |
-|---------|-------------|
-| `query` | List all existing sessions |
-| `create <task>` | Create a new session with a task |
-| `continue <id> <msg>` | Send a message to an existing session |
-| `run <task>` | Create session and execute task immediately |
 
 ## How It Works
 
