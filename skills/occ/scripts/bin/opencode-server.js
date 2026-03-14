@@ -52,17 +52,6 @@ function installDependencies(scriptDir) {
 const { querySessions, createSession } = require('../src/services/session');
 const { continueSession } = require('../src/services/message');
 
-function detectIntent(input) {
-  const text = input.toLowerCase();
-  
-  if (/初始化|新建项目|创建项目|开始项目/.test(text)) return 'init';
-  if (/功能|需求|issue|特性|创建需求|更新需求/.test(text)) return 'feature';
-  if (/自动|自动化|无人值守/.test(text)) return 'start-auto';
-  if (/开始|开发|做|启动/.test(text)) return 'start';
-  
-  return 'unknown';
-}
-
 function showHelp() {
   console.log(`
 OpenCode Server Executor CLI
@@ -110,22 +99,6 @@ async function handleCommand(args) {
     }
     
     const result = await continueSession(sessionId, userInput);
-    console.log(JSON.stringify(result, null, 2));
-    process.exit(0);
-    return;
-  }
-  
-  if (command === 'run') {
-    const taskDescription = args.slice(1).join(' ');
-    const intent = detectIntent(taskDescription);
-    
-    console.log(`Detected intent: ${intent}`);
-    console.log(`Task: ${taskDescription}`);
-    
-    const session = await createSession(taskDescription);
-    console.log('Session created:', session.sessionId);
-    
-    const result = await continueSession(session.sessionId, taskDescription);
     console.log(JSON.stringify(result, null, 2));
     process.exit(0);
     return;
