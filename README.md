@@ -18,18 +18,18 @@ OCC (OpenCode Controller) addresses these issues by communicating with OpenCode 
 
 ## Advantages
 
-1. **Low Cost**: OpenCode executes locally, OpenClaw only forwards messages -token consumption significantly reduced
+1. **Low Cost**: OpenCode executes locally, OpenClaw only forwards messages - token consumption significantly reduced
 2. **Automation**: HTTP API communication, no manual continuous interaction required
 3. **Parallel Capability**: Support concurrent task processing through session pool management
 4. **Extensibility**: Modular design, easy to extend, supports integration with ADT for complex workflows
 
 ## Usage Example
 
-### OpenClaw Integration (with `/occ` prefix)
+### OpenClaw Integration
 
 In OpenClaw, use the `occ` skill with the `/occ` prefix:
 
-```bash
+```
 # Query existing sessions
 /occ query
 
@@ -39,7 +39,3 @@ In OpenClaw, use the `occ` skill with the `/occ` prefix:
 # Continue a session with additional task
 /occ continue <session-id> "Add password reset feature"
 ```
-
-```
-
-## Install
