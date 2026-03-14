@@ -89,39 +89,3 @@ All commands return JSON:
 }
 ```
 
-## Integration Example
-
-### Call from Node.js
-
-```javascript
-const { exec } = require('child_process');
-
-function runOpenCodeTask(task) {
-  return new Promise((resolve, reject) => {
-    exec(`node skills/occ/scripts/bin/opencode-server.js run "${task}"`, 
-      (error, stdout, stderr) => {
-        if (error) reject(error);
-        else resolve(JSON.parse(stdout));
-      });
-  });
-}
-
-// Usage
-runOpenCodeTask("Create a hello world script")
-  .then(result => console.log(result.sessionId));
-```
-
-### Call from OpenCLAW
-
-```javascript
-// In your OpenCLAW skill
-const { execSync } = require('child_process');
-
-function handleUserRequest(userInput) {
-  const output = execSync(
-    `node skills/occ/scripts/bin/opencode-server.js run "${userInput}"`,
-    { encoding: 'utf8' }
-  );
-  return JSON.parse(output);
-}
-```
