@@ -42,9 +42,6 @@ node skills/occ/scripts/bin/opencode-server.js create "Create a React login page
 
 # Continue a session
 node skills/occ/scripts/bin/opencode-server.js continue <session-id> "Add password reset"
-
-# Run task directly
-node skills/occ/scripts/bin/opencode-server.js run "Fix the login bug"
 ```
 
 
