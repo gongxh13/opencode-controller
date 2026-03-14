@@ -57,3 +57,13 @@ In OpenClaw, use the `occ` skill with the `/occ` prefix:
 # Continue a session with additional task
 /occ continue <session-id> "Add password reset feature"
 ```
+
+### Real-world Demo
+
+**1. Send task from OpenClaw:**
+
+![OpenClaw Send Task](images/openclaw-send.png)
+
+**2. OpenCode receives and executes:**
+
+![OpenCode Execute Task](images/opencode-receive.png)

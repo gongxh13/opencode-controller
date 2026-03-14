@@ -55,3 +55,13 @@ OpenClaw在执行复杂编程任务时存在以下局限：
 # 继续会话
 /occ continue <session-id> "添加密码重置功能"
 ```
+
+### 实际效果演示
+
+**1. 从OpenClaw发送任务:**
+
+![OpenClaw Send Task](../../images/openclaw-send.png)
+
+**2. OpenCode接收并执行:**
+
+![OpenCode Execute Task](../../images/opencode-receive.png)
