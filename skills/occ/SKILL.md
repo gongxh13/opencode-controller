@@ -24,19 +24,17 @@ Use this skill when:
 ### Basic Usage
 
 ```bash
-cd skills/occ/scripts
-
 # Query existing sessions
-node bin/opencode-server.js query
+node skills/occ/scripts/bin/opencode-server.js query
 
 # Create a new session
-node bin/opencode-server.js create "Create a React login page"
+node skills/occ/scripts/bin/opencode-server.js create "Create a React login page"
 
 # Continue a session
-node bin/opencode-server.js continue <session-id> "Add password reset feature"
+node skills/occ/scripts/bin/opencode-server.js continue <session-id> "Add password reset"
 
 # Run task directly
-node bin/opencode-server.js run "Fix the login bug"
+node skills/occ/scripts/bin/opencode-server.js run "Fix the login bug"
 ```
 
 
