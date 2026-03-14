@@ -60,8 +60,8 @@ OpenClaw在执行复杂编程任务时存在以下局限：
 
 **1. 从OpenClaw发送任务:**
 
-![OpenClaw Send Task](../../images/openclaw-send.png)
+![OpenClaw Send Task](../images/openclaw-send.png)
 
 **2. OpenCode接收并执行:**
 
-![OpenCode Execute Task](../../images/opencode-receive.png)
+![OpenCode Execute Task](../images/opencode-receive.png)

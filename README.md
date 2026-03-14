@@ -62,8 +62,8 @@ In OpenClaw, use the `occ` skill with the `/occ` prefix:
 
 **1. Send task from OpenClaw:**
 
-![OpenClaw Send Task](images/openclaw-send.png)
+![OpenClaw Send Task](docs/images/openclaw-send.png)
 
 **2. OpenCode receives and executes:**
 
-![OpenCode Execute Task](images/opencode-receive.png)
+![OpenCode Execute Task](docs/images/opencode-receive.png)
