@@ -46,19 +46,6 @@ npx skills add gongxh13/opencode-controller
 :/occ continue <session-id> "添加密码重置功能"
 ```
 
-### 直接使用 CLI
-
-```bash
-# 查询现有会话
-node skills/occ/scripts/bin/opencode-server.js query
-
-# 创建新会话
-node skills/occ/scripts/bin/opencode-server.js create "创建一个 React 登录页面"
-
-# 继续会话
-node skills/occ/scripts/bin/opencode-server.js continue <session-id> "添加密码重置"
-```
-
 ### 与 ADT 集成
 
 OCC 可以与 [ADT](https://atomgit.com/leon-wang2021/agent-dev-team)（Agent Development Team）配合使用，实现自动化 Issue 处理：

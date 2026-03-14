@@ -46,19 +46,6 @@ In OpenClaw, use the `occ` skill with the `:/occ` prefix:
 :/occ continue <session-id> "Add password reset feature"
 ```
 
-### Direct CLI Usage
-
-```bash
-# Query existing sessions
-node skills/occ/scripts/bin/opencode-server.js query
-
-# Create a new session
-node skills/occ/scripts/bin/opencode-server.js create "Create a React login page"
-
-# Continue a session
-node skills/occ/scripts/bin/opencode-server.js continue <session-id> "Add password reset"
-```
-
 ### Integration with ADT
 
 OCC works seamlessly with [ADT](https://atomgit.com/leon-wang2021/agent-dev-team) (Agent Development Team) for automated issue handling:
