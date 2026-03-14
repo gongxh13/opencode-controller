@@ -1,37 +1,36 @@
-# OpenCode Controller
+# OpenCode Controller (OCC)
 
-Control OpenCode to execute development tasks. This skill provides session management, intent detection, and task execution capabilities for automating development workflows.
+Control OpenCode to execute development tasks via CLI.
 
 ## Features
 
 - **Session Management**: Create, continue, and query OpenCode sessions
-- **Intent Detection**: Automatically detect user intent from natural language
-- **REST API Integration**: Work with OpenCode Server via HTTP
+- **Auto Server Management**: Automatically detects or starts OpenCode Server
 - **OpenCLAW Ready**: Can be used as a bridge for OpenCLAW to control OpenCode
 
 ## Quick Start
 
 ```bash
 # Install dependencies
-cd skills/adt-handler/scripts
+cd skills/occ/scripts
 npm install
 
-# List all sessions
+# Query existing sessions
 node bin/opencode-server.js query
 
 # Create a new session
-node bin/opencode-server.js create "帮我创建一个React项目"
+node bin/opencode-server.js create "Create a React login page"
 
 # Continue a session
-node bin/opencode-server.js continue <session-id> "添加用户登录功能"
+node bin/opencode-server.js continue <session-id> "Add password reset"
 
 # Run task directly
-node bin/opencode-server.js run "修复登录页面的bug"
+node bin/opencode-server.js run "Fix the login bug"
 ```
 
 ## Documentation
 
-See [skills/adt-handler/SKILL.md](skills/adt-handler/SKILL.md) for detailed documentation.
+See [skills/occ/SKILL.md](skills/occ/SKILL.md) for detailed documentation.
 
 ## License
 

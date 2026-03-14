@@ -1,7 +1,7 @@
 {
-  "name": "opencode-controller",
+  "name": "occ",
   "version": "1.0.0",
-  "description": "Control OpenCode to execute development tasks",
+  "description": "OpenCode Controller - Control OpenCode via CLI",
   "main": "bin/opencode-server.js",
   "bin": {
     "opencode-server": "./bin/opencode-server.js"
