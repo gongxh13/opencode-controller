@@ -26,7 +26,12 @@ OpenCode CLI must be installed and available in PATH.
 
 ⚠️ **Important**: Run the script in the directory where you want OpenCode to work. The session will be created in the current directory.
 
-### Step 2: Run Command
+### Step 2: Decide Session Mode
+
+- **New session**: Use `create` or `run` command
+- **Continue existing session**: Use `continue` command (get session ID from `query` command)
+
+### Step 3: Run Command
 
 ```bash
 # Query existing sessions
