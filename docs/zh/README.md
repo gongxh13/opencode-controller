@@ -23,12 +23,6 @@ OCC (OpenCode Controller) 通过 HTTP API 与 OpenCode Server 通信，无须 PT
 3. **并行能力**：支持通过会话池管理实现并发任务处理
 4. **可扩展**：模块化设计，易于扩展，支持与 ADT 集成实现复杂工作流
 
-## 安装
-
-```bash
-npx skills add gongxh13/opencode-controller
-```
-
 ## 使用示例
 
 ### OpenClaw 集成（使用 `/occ` 前缀）

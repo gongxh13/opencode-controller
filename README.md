@@ -23,12 +23,6 @@ OCC (OpenCode Controller) addresses these issues by communicating with OpenCode 
 3. **Parallel Capability**: Support concurrent task processing through session pool management
 4. **Extensibility**: Modular design, easy to extend, supports integration with ADT for complex workflows
 
-## Install
-
-```bash
-npx skills add gongxh13/opencode-controller
-```
-
 ## Usage Example
 
 ### OpenClaw Integration (with `/occ` prefix)
