@@ -60,32 +60,14 @@ The script automatically handles OpenCode Server:
 2. **Auto-Start**: If no server is found, automatically starts a new one
 3. **Session Management**: Creates and manages development sessions through OpenCode's session API
 
-## Output Format
-
-All commands return JSON:
+## Output
 
 ```json
-// Query response
-{
-  "action": "query",
-  "sessions": [
-    {
-      "id": "abc123",
-      "title": "Create React login",
-      "directory": "/path/to/workdir",
-      "created": "2024-01-01T00:00:00Z",
-      "updated": "2024-01-01T00:05:00Z"
-    }
-  ]
-}
+{"success":true,"sessionId":"abc123","directory":"/path/to/workdir"}
+```
 
-// Create/Run response
-{
-  "success": true,
-  "sessionId": "abc123",
-  "directory": "/path/to/workdir",
-  "baseUrl": "http://127.0.0.1:4096",
-  "message": "Session created. Use continue to execute task."
-}
+Error:
+```json
+{"success":false,"error":"Session not found"}
 ```
 
