@@ -6,6 +6,14 @@
 
 ---
 
+## 📦 Install
+
+```bash
+npx skills add gongxh13/opencode-controller
+```
+
+---
+
 ## 🚀 Why OCC?
 
 OpenClaw has some limitations when executing complex programming tasks:

@@ -6,6 +6,14 @@
 
 ---
 
+## 📦 安装
+
+```bash
+npx skills add gongxh13/opencode-controller
+```
+
+---
+
 ## 🤔 为什么使用OCC？
 
 OpenClaw在执行复杂编程任务时存在以下局限：
