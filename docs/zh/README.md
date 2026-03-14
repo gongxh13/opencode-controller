@@ -1,6 +1,8 @@
 # 🌟 OpenCode Controller (OCC)
 
-🌐 语言: [English](../../README.md) | **中文**
+## 🌍 Language Switcher / 语言切换
+
+[English](../../README.md) | **中文**
 
 ---
 
