@@ -20,9 +20,13 @@ Use this skill when:
 
 OpenCode CLI must be installed and available in PATH.
 
-### Basic Usage
+## Workflow
 
-Run in the directory where you want OpenCode to work (the session will be created in the current directory).
+### Step 1: Choose Working Directory
+
+⚠️ **Important**: Run the script in the directory where you want OpenCode to work. The session will be created in the current directory.
+
+### Step 2: Run Command
 
 ```bash
 # Query existing sessions
