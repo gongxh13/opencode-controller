@@ -133,7 +133,3 @@ function handleUserRequest(userInput) {
 | `opencode: command not found` | OpenCode CLI not installed | Install OpenCode CLI |
 | `Server startup timeout` | Failed to start OpenCode Server | Check OpenCode installation |
 | `Session not found` | Session expired | Create a new session |
-
-## License
-
-MIT
