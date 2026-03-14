@@ -27,8 +27,8 @@ Use this skill when:
 
 ### Prerequisites
 
-1. OpenCode Server must be running
-2. Configure the OpenCode Server URL (default: http://127.0.0.1:8089)
+1. OpenCode CLI must be installed and available in PATH
+2. No need to start OpenCode Server manually - the script will automatically detect or start it
 
 ### Basic Usage
 
@@ -141,27 +141,14 @@ curl -X POST http://127.0.0.1:8089/sessions/{session-id}/continue \
   -d '{"message": "添加手机验证码登录"}'
 ```
 
-## Configuration
+## How It Works
 
-### Environment Variables
+The script automatically handles OpenCode Server:
 
-| Variable | Description | Default |
-|----------|-------------|---------|
-| `OPENCODE_SERVER_URL` | OpenCode Server URL | http://127.0.0.1:8089 |
-| `OPENCODE_API_KEY` | API Key (if required) | - |
-
-### Configuration File
-
-You can also configure via `config.json`:
-
-```json
-{
-  "opencode": {
-    "serverUrl": "http://127.0.0.1:8089",
-    "apiKey": ""
-  }
-}
-```
+1. **Port Detection**: Scans ports 4096-4200 to find an existing OpenCode Server
+2. **Auto-Start**: If no server is found, automatically starts a new one
+3. **Session Management**: Creates and manages development sessions
+4. **Auto-Cleanup**: Terminates the server process when done (optional)
 
 ## API Reference
 
