@@ -28,7 +28,7 @@ OpenCode CLI must be installed and available in PATH.
 
 ### Step 2: Decide Session Mode
 
-- **New session**: Use `create` command
+- **New session**: Use `create` command (creates session only, then use `continue` to execute task)
 - **Continue existing session**: Use `continue` command (session ID provided by caller)
 
 ### Step 3: Run Command
