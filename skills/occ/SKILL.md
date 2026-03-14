@@ -22,6 +22,8 @@ OpenCode CLI must be installed and available in PATH.
 
 ### Basic Usage
 
+Run in the directory where you want OpenCode to work (the session will be created in the current directory).
+
 ```bash
 # Query existing sessions
 node skills/occ/scripts/bin/opencode-server.js query
