@@ -60,14 +60,5 @@ The script automatically handles OpenCode Server:
 2. **Auto-Start**: If no server is found, automatically starts a new one
 3. **Session Management**: Creates and manages development sessions through OpenCode's session API
 
-## Output
 
-```json
-{"success":true,"sessionId":"abc123","directory":"/path/to/workdir"}
-```
-
-Error:
-```json
-{"success":false,"error":"Session not found"}
-```
 
