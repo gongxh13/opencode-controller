@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="<%= lang %>">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OCC - OpenCode Controller</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav>
+    <div class="container nav-inner">
+      <div class="logo">OCC</div>
+      <ul class="nav-links">
+        <li><a href="/?lang=<%= lang %>" class="<%= typeof page === 'undefined' || page === 'home' ? 'active' : '' %>"><%= t.nav.home %></a></li>
+        <li><a href="/install?lang=<%= lang %>" class="<%= page === 'install' ? 'active' : '' %>"><%= t.nav.install %></a></li>
+        <li><a href="/api?lang=<%= lang %>" class="<%= page === 'api' ? 'active' : '' %>"><%= t.nav.api %></a></li>
+        <li><a href="/demo?lang=<%= lang %>" class="<%= page === 'demo' ? 'active' : '' %>"><%= t.nav.demo %></a></li>
+      </ul>
+      <div class="nav-controls">
+        <button id="theme-toggle" class="theme-toggle">🌙</button>
+        <select id="lang-toggle" class="lang-toggle">
+          <option value="en" <%= lang === 'en' ? 'selected' : '' %>>EN</option>
+          <option value="zh" <%= lang === 'zh' ? 'selected' : '' %>>中文</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+  <%- body %>
+  <footer>
+    <div class="container">
+      <p><%= t.footer.text %></p>
+    </div>
+  </footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

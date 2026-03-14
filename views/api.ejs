@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="<%= lang %>">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API - OCC</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav>
+    <div class="container nav-inner">
+      <div class="logo">OCC</div>
+      <ul class="nav-links">
+        <li><a href="/?lang=<%= lang %>"><%= t.nav.home %></a></li>
+        <li><a href="/install?lang=<%= lang %>"><%= t.nav.install %></a></li>
+        <li><a href="/api?lang=<%= lang %>" class="active"><%= t.nav.api %></a></li>
+        <li><a href="/demo?lang=<%= lang %>"><%= t.nav.demo %></a></li>
+      </ul>
+      <div class="nav-controls">
+        <button id="theme-toggle" class="theme-toggle">🌙</button>
+        <select id="lang-toggle" class="lang-toggle">
+          <option value="en" <%= lang === 'en' ? 'selected' : '' %>>EN</option>
+          <option value="zh" <%= lang === 'zh' ? 'selected' : '' %>>中文</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+
+  <section style="padding-top: 120px;">
+    <div class="container">
+      <h2 class="section-title"><%= t.api.title %></h2>
+      
+      <div class="api-endpoint">
+        <h3>query</h3>
+        <p><%= t.api.query.desc %></p>
+        <div class="code-block">
+          <code><%= t.api.query.code %></code>
+        </div>
+      </div>
+
+      <div class="api-endpoint">
+        <h3>create</h3>
+        <p><%= t.api.create.desc %></p>
+        <div class="code-block">
+          <code><%= t.api.create.code %></code>
+        </div>
+      </div>
+
+      <div class="api-endpoint">
+        <h3>continue</h3>
+        <p><%= t.api.continue.desc %></p>
+        <div class="code-block">
+          <code><%= t.api.continue.code %></code>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p><%= t.footer.text %></p>
+    </div>
+  </footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>
