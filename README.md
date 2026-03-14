@@ -31,19 +31,19 @@ npx skills add gongxh13/opencode-controller
 
 ## Usage Example
 
-### OpenClaw Integration (with `:/occ` prefix)
+### OpenClaw Integration (with `/occ` prefix)
 
-In OpenClaw, use the `occ` skill with the `:/occ` prefix:
+In OpenClaw, use the `occ` skill with the `/occ` prefix:
 
 ```bash
 # Query existing sessions
-:/occ query
+/occ query
 
 # Create a new session
-:/occ create "Create a React login page"
+/occ create "Create a React login page"
 
 # Continue a session with additional task
-:/occ continue <session-id> "Add password reset feature"
+/occ continue <session-id> "Add password reset feature"
 ```
 
 ```

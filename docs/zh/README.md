@@ -31,19 +31,19 @@ npx skills add gongxh13/opencode-controller
 
 ## 使用示例
 
-### OpenClaw 集成（使用 `:/occ` 前缀）
+### OpenClaw 集成（使用 `/occ` 前缀）
 
-在 OpenClaw 中，可以使用 `occ` 技能，格式为 `:/occ`：
+在 OpenClaw 中，可以使用 `occ` 技能，格式为 `/occ`：
 
 ```bash
 # 查询现有会话
-:/occ query
+/occ query
 
 # 创建新会话
-:/occ create "创建一个 React 登录页面"
+/occ create "创建一个 React 登录页面"
 
 # 继续现有会话
-:/occ continue <session-id> "添加密码重置功能"
+/occ continue <session-id> "添加密码重置功能"
 ```
 
 ```
