@@ -125,11 +125,3 @@ function handleUserRequest(userInput) {
   return JSON.parse(output);
 }
 ```
-
-## Error Handling
-
-| Error | Cause | Solution |
-|-------|-------|----------|
-| `opencode: command not found` | OpenCode CLI not installed | Install OpenCode CLI |
-| `Server startup timeout` | Failed to start OpenCode Server | Check OpenCode installation |
-| `Session not found` | Session expired | Create a new session |
