@@ -18,8 +18,7 @@ Use this skill when:
 
 ### Prerequisites
 
-1. OpenCode CLI must be installed and available in PATH
-2. No need to start OpenCode Server manually - the script will automatically detect or start it
+OpenCode CLI must be installed and available in PATH.
 
 ### Basic Usage
 
